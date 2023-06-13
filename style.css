@@ -63,6 +63,38 @@ a{
     background-color: darkgray;
     display: grid;
     grid-template-rows: 1fr 4fr;
+}
 
+.main-item-1{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 6fr 1fr 1fr 1fr;
+}
+
+.list3{
+    grid-column-start: 2;
+    grid-column-end: 5;
+}
+
+.list3-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.greeting{
+    grid-area: 2/1;
+}
+.greeting-content{
+    display: grid;
+    grid-template-columns: 100px 1fr;
+}
+
+.topRight{
+    grid-area: 1/2/1/5;
+}
+
+.topRight-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
