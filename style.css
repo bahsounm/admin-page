@@ -9,7 +9,7 @@ body{
 }
 
 .header{
-    background-color: lightblue;
+    background-color: grey;
     grid-area: 1/2/1/3;
 }
 
@@ -19,7 +19,7 @@ body{
 }
 
 .main{
-    background-color: lightgreen;
+    background-color: #e0f2fe;
     grid-area: 2/2/3/3;
 }
 /* ====================================== */
@@ -66,11 +66,13 @@ input{
 .text1{
     grid-area: 1/2/1/3;
     font-size: 17px;
+    color: white;
 }
 
 .text2{
     grid-area: 1/2/1/3;
     font-size: 25px; 
+    color: white;
 }
 
 .pfp{
@@ -98,6 +100,7 @@ p{
 .name{
     margin-right: 20px;
     font-size: 20px;
+    color: white;
 }
 
 .bellImg{
@@ -126,6 +129,7 @@ p{
     padding-right: 20px;
     padding-left: 20px;
     transition: all .2s ease-in;
+    color: white;
 
 }
 .new:hover, .upload:hover, .share:hover{
@@ -137,7 +141,7 @@ p{
 /* Sidebar */
 .sidebar-container{
     display: grid;
-    grid-template-rows: 1fr 4fr 4fr;
+    grid-template-rows: 1fr 3fr 4fr;
 }
 .title{
     color: white;
@@ -168,3 +172,62 @@ p{
 }
 /* ====================================== */
 /* Main Content */
+
+.main-container{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.projects{
+    grid-area: 1/1/3/2;
+}
+
+.projects-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+.project{
+    margin: 0px 10px 10px 10px;
+    border-radius: 13px;
+    background: white;
+    box-shadow: 0 0 3px 1px black;
+    border-left: 10px solid rgb(105, 58, 167);
+
+}
+.project-name{
+    margin: 0;
+    padding: 10px;
+    padding-left: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.description{
+    padding: 0px 20px 20px 20px;
+
+}
+
+.action-block{
+    display: flex;
+    justify-content: right;
+    gap: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+
+.save,.delete,.shares{
+    width:20px;
+}
+/* ====================================== */
+/* Right Side Bar */
+.announcements{
+    grid-area:1/2/2/2;
+}
+.trending{
+    grid-area:2/2/3/2;
+}
