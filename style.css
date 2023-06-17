@@ -114,10 +114,10 @@ p{
 .NUS{
     grid-area: 2/2/2/3;
     display: flex;
-    font-size: 30px;
+    font-size: 20px;
     align-items: center;
     justify-content: right;
-    gap: 80px;
+    gap: 60px;
     margin-right: 30px;
 }
 
@@ -181,11 +181,20 @@ p{
 
 .projects{
     grid-area: 1/1/3/2;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 10px;
+    margin-left: 10px;
 }
 
+#first{
+    margin-top: 60px;
+}
 .projects-container{
+    grid-area: 1/1/3/2;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    margin-left: 10px;
 
 }
 
@@ -225,9 +234,42 @@ p{
 }
 /* ====================================== */
 /* Right Side Bar */
-.announcements{
-    grid-area:1/2/2/2;
+.right-sidebar{
+    grid-area:1/2/3/3;
+    margin-left: 10px;
 }
-.trending{
-    grid-area:2/2/3/2;
+.one{
+    margin-left: 10px;
+}
+.right-sidebar-container{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.annouce-container{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: grid;
+    /* grid-template-rows: 1fr 1fr 1fr; */
+    grid-gap: 50px;
+    border-radius: 20px;
+    border-style: solid;
+    padding: 15px;
+}
+.pTitle{
+    font-size: 20px;
+    font-weight: bold;
+
+}
+.announce-border{
+    width: 100%;
+    height: 1px;
+    background-color: lightgray;
+}
+.pAns{
+
+}
+
+p{
+    padding: 0;
 }
